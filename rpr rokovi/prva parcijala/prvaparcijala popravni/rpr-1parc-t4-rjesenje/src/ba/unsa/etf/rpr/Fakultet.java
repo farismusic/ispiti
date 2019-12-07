@@ -53,8 +53,8 @@ public class Fakultet {
 
     public List<BachelorStudent> topBachelor() {
 
-        List bachelori = osobe.stream().filter(osoba -> osoba instanceof BachelorStudent && ((BachelorStudent) osoba).prosjek() >= 8).collect(Collectors.toList());
-        return bachelori;
+        List bachelori = filtriraj(osoba -> osoba instanceof BachelorStudent && ((BachelorStudent) osoba).prosjek() >= 8);
+        return bachelori ;
 
     }
 
