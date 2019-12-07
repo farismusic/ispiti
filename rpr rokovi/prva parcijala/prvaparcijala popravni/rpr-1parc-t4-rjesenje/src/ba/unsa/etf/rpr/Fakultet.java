@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.function.Predicate;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Fakultet {
@@ -53,8 +52,8 @@ public class Fakultet {
 
     public List<BachelorStudent> topBachelor() {
 
-        List bachelori = osobe.stream().filter(osoba -> osoba instanceof BachelorStudent && ((BachelorStudent) osoba).prosjek() >= 8).collect(Collectors.toList());
-        return bachelori;
+        List bachelori = filtriraj((Osoba osoba) ->  {return (osoba instanceof BachelorStudent && ((BachelorStudent) osoba).prosjek() >= 8);});
+        return bachelori ;
 
     }
 
