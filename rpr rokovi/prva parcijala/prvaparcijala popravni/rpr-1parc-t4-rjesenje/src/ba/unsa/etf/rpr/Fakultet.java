@@ -4,48 +4,74 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Fakultet {
-    private List<Osoba> lista = new ArrayList<>();
 
-    public void dodajOsobu(Osoba o) {
-        lista.add(o);
+    private List<Osoba> osobe = new ArrayList<>();
+
+    public void dodajOsobu(Osoba o){
+        osobe.add(o);
     }
+
 
     @Override
     public String toString() {
-        String rez = "";
-        for (Osoba o : lista)
-            rez += o + "\n";
-        return rez;
+
+        String ispisi = "";
+
+        for(Osoba o : osobe){
+            ispisi = ispisi + o.toString() + "\n";
+        }
+
+        return ispisi;
+
     }
 
     public Set<Student> studenti() {
-        TreeSet<Student> rez = new TreeSet<>();
-        for (Osoba o : lista)
-            if (o instanceof Student)
-                rez.add((Student)o);
-        return rez;
+
+        Set<Student> students = new TreeSet<>();
+
+        for (Osoba o : osobe){
+            if(o instanceof Student){
+                students.add((Student) o );
+            }
+        }
+
+        return students;
     }
 
-    public List<Osoba> filtriraj(Function<Osoba, Boolean> f) {
-        ArrayList<Osoba> rez = new ArrayList<>();
-        for(Osoba o: lista)
-            if (f.apply(o)) rez.add(o);
-        return rez;
+    public List<Osoba> filtriraj(Predicate<Osoba> fun) {
+
+
+        return osobe.stream().filter(osoba -> fun.test(osoba)).collect(Collectors.toList());
+
     }
+
 
     public List<BachelorStudent> topBachelor() {
-        List lista = filtriraj((Osoba o) -> { return (o instanceof BachelorStudent && ((BachelorStudent) o).prosjek() >= 8);});
-        return lista;
+
+        List bachelori = osobe.stream().filter(osoba -> osoba instanceof BachelorStudent && ((BachelorStudent) osoba).prosjek() >= 8).collect(Collectors.toList());
+        return bachelori;
+
     }
 
     public List<Mladi> mladi() {
+
         List<Mladi> rez = new ArrayList<>();
-        for (Osoba o : lista)
-            if (o instanceof MasterStudent || o instanceof Docent)
-                rez.add((Mladi)o);
+
+        for (Osoba o : osobe) {
+            if (o instanceof MasterStudent || o instanceof Docent) {
+
+                o = new Mladi(o.getImePrezime());
+
+                rez.add((Mladi) o);
+            }
+        }
         return rez;
     }
 }
+
+

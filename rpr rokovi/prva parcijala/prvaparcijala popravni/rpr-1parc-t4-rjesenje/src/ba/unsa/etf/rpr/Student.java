@@ -1,6 +1,14 @@
 package ba.unsa.etf.rpr;
 
-public class Student extends Osoba implements Comparable<Student> {
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Arrays;
+import java.util.Locale;
+
+public abstract class Student extends Osoba implements Comparable{
+
+
+
     private String brojIndeksa = "";
     private int[] ocjene = new int[100];
     private int brojOcjena = 0;
@@ -17,36 +25,57 @@ public class Student extends Osoba implements Comparable<Student> {
         this.brojIndeksa = brojIndeksa;
     }
 
-    public int getBrojOcjena() { return brojOcjena; }
-
     public void dodajOcjenu(int ocjena) throws IlegalnaOcjena {
-        if (ocjena < 5 || ocjena > 10) throw new IlegalnaOcjena("Ilegalna ocjena " + Integer.toString(ocjena));
-        if (brojOcjena >= 100)
+
+        if(brojOcjena == 100){
             throw new IllegalArgumentException("Dosegnut maksimalan broj ocjena");
-        ocjene[brojOcjena++] = ocjena;
+        }else if(ocjena > 10 || ocjena < 5){
+            throw new IlegalnaOcjena("Ilegalna ocjena " + ocjena);
+        } else {
+            ocjene[brojOcjena++] = ocjena;
+        }
+
     }
 
-    public double prosjek() {
-        if (brojOcjena == 0) return 0;
-        double suma = 0;
-        for (int i=0; i < brojOcjena; i++)
-            suma += ocjene[i];
-        return suma / brojOcjena;
-    }
+    public double prosjek(){
+        if(brojOcjena == 0){
+            return 0;
+        } else {
 
-    @Override
-    public int compareTo(Student student) {
-        if (prosjek() > student.prosjek()) return -1;
-        if (prosjek() < student.prosjek()) return 1;
-        return 0;
+            return Arrays.stream(ocjene).filter(ocjena -> ocjena != 0).average().getAsDouble();
+
+        }
     }
 
     @Override
     public String toString() {
-        String rez = "student "+getImePrezime()+" ("+getBrojIndeksa()+"), prosjek ocjena: ";
-        double zaokruzen = Math.round(prosjek() * 10);
-        zaokruzen /= 10;
-        rez += zaokruzen;
-        return rez;
+
+        DecimalFormat df = new DecimalFormat("#.#", new DecimalFormatSymbols(Locale.US));
+        Double returnValue = Double.valueOf(df.format(prosjek()));
+
+        //Double formatiraniProsjek = Double.("%.1f", prosjek());
+        return "student " + super.toString() + " (" +getBrojIndeksa() + ")" + ", prosjek ocjena: " + returnValue;
+    }
+
+    public int[] getOcjene() {
+        return ocjene;
+    }
+
+    public int getBrojOcjena() {
+        return brojOcjena;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Student s1 = (Student) o;
+        Student s2 = this;
+
+        if(s1.prosjek() > s2.prosjek()){
+            return 1;
+        } else if(s1.prosjek() < s2.prosjek()) {
+            return -1;
+        }else {
+            return s1.getImePrezime().compareToIgnoreCase(s2.getImePrezime());
+        }
     }
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165b04a4-d13a-47e9-86a1-5a0aea9bb88b" name="Default Changelist" comment="" />
+    <list default="true" id="165b04a4-d13a-47e9-86a1-5a0aea9bb88b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpr-1parc-t3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rpr-1parc-t3.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +52,15 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="715311380">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -83,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnikTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="451">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/RadnoMjesto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="531">
               <caret line="53" selection-start-line="48" selection-end-line="53" />
               <folding>
                 <element signature="e#1114#1115#0" expanded="true" />
@@ -105,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnoMjestoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Preduzece.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
+            <state relative-caret-position="1560">
               <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -129,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/PreduzeceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="20">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,6 +176,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -189,54 +204,36 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpr-1parc-t3" type="462c0819:PsiDirectoryNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpr-1parc-t3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpr-1parc-t3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rpr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpr-1parc-t3" type="462c0819:PsiDirectoryNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpr-1parc-t3" type="462c0819:PsiDirectoryNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpr-1parc-t3-rjesenje" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="rpr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="rpr-1parc-t3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,13 +363,11 @@
       <workItem from="1548500024568" duration="13477000" />
       <workItem from="1549458863217" duration="7000" />
       <workItem from="1550444599769" duration="85000" />
+      <workItem from="1575245565915" duration="204000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PreduzeceTest_testZaposliIzuzetak - 2019.01.26 at 18h 12m 37s.xml">
-      <configuration name="PreduzeceTest.testZaposliIzuzetak" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PreduzeceTest_testZaposliIzuzetak - 2019.01.26 at 18h 13m 36s.xml">
       <configuration name="PreduzeceTest.testZaposliIzuzetak" configurationId="JUnit" />
     </history-entry>
@@ -400,9 +395,12 @@
     <history-entry file="All_in_rpr-1parc-t3 - 2019.01.26 at 18h 54m 46s.xml">
       <configuration name="All in rpr-1parc-t3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_rpr-1parc-t3 - 2019.12.02 at 01h 14m 32s.xml">
+      <configuration name="All in rpr-1parc-t3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13569000" />
+    <option name="totallyTimeSpent" value="13773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -413,7 +411,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18017058" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -470,31 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnikTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Preduzece.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/RadnoMjesto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="53" selection-start-line="48" selection-end-line="53" />
-          <folding>
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnoMjestoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="1560">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -512,20 +489,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Preduzece.java">
+    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/RadnoMjesto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        <state relative-caret-position="531">
+          <caret line="53" selection-start-line="48" selection-end-line="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/PreduzeceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="20">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnikTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/RadnoMjestoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

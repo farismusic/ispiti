@@ -1,13 +1,25 @@
 package ba.unsa.etf.rpr;
 
-public class Docent extends Nastavnik implements Mladi {
+import java.time.LocalDate;
+
+public class Docent extends Nastavnik {
+
+
     public Docent(String imePrezime) {
         super(imePrezime);
     }
 
     @Override
     public String toString() {
-        String rez = "Doc. dr "+getImePrezime();
-        return rez;
+        return "Doc. " + super.toString();
+    }
+
+    public String rodjendan(LocalDate datum2) {
+        LocalDate ld = LocalDate.now();
+        if(ld.getMonth().equals(datum2.getMonth()) && ld.getDayOfYear() == datum2.getDayOfYear()){
+            return "Sretan rodjendan!";
+        } else {
+            return "";
+        }
     }
 }

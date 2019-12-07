@@ -1,5 +1,12 @@
 package ba.unsa.etf.rpr;
 
 public class IlegalnaOcjena extends Exception {
-    IlegalnaOcjena(String s) { super(s); }
+
+    public IlegalnaOcjena(){
+        super();
+    }
+
+    public IlegalnaOcjena(String mess){
+        super(mess);
+    }
 }

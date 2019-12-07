@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr;
 
-public class Osoba {
+public abstract class Osoba {
+
     private String imePrezime;
 
     public Osoba(String imePrezime) {
@@ -13,5 +14,10 @@ public class Osoba {
 
     public void setImePrezime(String imePrezime) {
         this.imePrezime = imePrezime;
+    }
+
+    @Override
+    public String toString() {
+        return imePrezime;
     }
 }
